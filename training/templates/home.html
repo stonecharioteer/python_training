@@ -1,11 +1,81 @@
 <html>
     <head>
-        <link rel="stylesheet" href="asciinema-player.css">
+        <title>Python Training Program</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='libs/asciinema/asciinema-player.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='libs/reveal.js/css/reveal.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='libs/reveal.js/css/theme/serif.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='libs/buefy/buefy.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='libs/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+
     </head>
 <body>
-    <p>Python Training Program</p>
-    <asciinema-player src="/demo.cast" cols="80" rows="20" idle-time-limit="1" speed="2" font-size="8px"></asciinema-player>
-    <script src="asciinema-player.js"></script>
+    <div class="reveal">
+        <div class="slides">
+            <section 
+                data-background-image="{{ url_for('static', filename='img/new_header.PNG') }}" 
+                data-background-size="180px" 
+                data-background-position="top left">
+                
+                <div class="columns is-centered is-multiline is-mobile">
+                    <div class="column is-three-quarters">
+                        <img src="{{ url_for('static', filename='img/1024px-Python-logo-notext.svg.png')}}" width="100" style="border: 0px; shadow: 0;">
+                        <p class="title">Python Training</p>
+                    </div>
+                    <div class="column has-text-centered is-centered">
+                        <div class="container" style="display: flex; justify-content: center;">
+                            <div class="field is-grouped is-grouped-multiline">
+                                <div class="control">
+                                    <div class="tags has-addons">
+                                        <span class="tag is-white">
+                                            <a href="mailto:najeem.muhammed@gknaerospace.com">
+                                                <i class="fa fa-envelope-o fa-fw"></i>
+                                            </a>
+                                        </span>
+                                        <span class="tag is-warning">
+                                            <a href="https://github.com/najeem">
+                                                <i class="fa fa-github fa-fw"></i>
+                                            </a>
+                                        </span>
+                                        <span class="tag is-info">
+                                            Najeem Muhammed
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class='control'>
+                                    <div class="tags has-addons">
+                                        <span class="tag is-white">
+                                            <a href="mailto:vinay.keerthi@gkndriveline.com">
+                                                <i class="fa fa-envelope-o fa-fw"></i>
+                                            </a>
+                                        </span>
+                                        <span class="tag is-warning">
+                                            <a href="https://github.com/vinay87">
+                                                <i class="fa fa-github fa-fw"></i>
+                                            </a>
+                                        </span>
+                                        <span class="tag is-info">
+                                            Vinay Keerthi
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section>
+                <asciinema-player src="{{ url_for('static', filename='asciinema/demo.cast') }}" cols="200" rows="30" idle-time-limit="1" speed="2" font-size="12px"></asciinema-player>
+            </section>
+        </div>
+    </div>
+    <!--  -->
+    <script src="{{ url_for('static', filename='libs/asciinema/asciinema-player.js') }}"></script>
+    <script src="{{ url_for('static', filename='libs/reveal.js/js/reveal.js') }}"></script>
+    <script src="{{ url_for('static', filename='libs/vue.js-2.5.13/vue.js') }}"></script>
+    <script src="{{ url_for('static', filename='libs/buefy/buefy.js') }}"></script>
+    <script src="{{ url_for('static', filename='libs/axios/axios.js') }}"></script>
+    <script src="{{ url_for('static', filename='libs/lodash/lodash.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
     
 </body>
 </html>
