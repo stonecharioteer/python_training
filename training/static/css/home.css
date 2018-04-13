@@ -1,3 +1,10 @@
 p.longtext {
     font-size: 18px;
 }
+p.longtext.mini {
+    font-size: 8px;
+}
+
+span.tag.is-bordered {
+     border: 1px solid black;
+}
