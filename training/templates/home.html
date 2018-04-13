@@ -67,8 +67,44 @@
                 data-background-image="{{ url_for('static', filename='img/new_header.PNG') }}" 
                 data-background-size="180px" 
                 data-background-position="top left">
-                <asciinema-player src="{{ url_for('static', filename='asciinema/demo.cast') }}" cols="200" rows="30" idle-time-limit="1" speed="2" font-size="12px"></asciinema-player>
+                <section>
+                    <p class="title">Welcome to the Python Training Course</p>
+                    <div class="content">
+                        <p>Python is a <span class="fragment highlight-red">general purpose programming language</span> that can allow you to do many things on a computer.</p>
+                    </div>
+                </section>
+                <section>
+                    <p>Python's powers are largely due to it's <span class="fragment highlight-blue">cross-compatability</span>, <span class="fragment highlight-green">readability</span>, and <span class="fragment highlight-red">elegance</span>. If you can write English, you can write Python code.</p>
+                </section>
+                <section>
+                    <p class="longtext">Let's begin. Ensure you have downloaded and installed the <a href="https://anaconda.org">Anaconda</a> distribution on a computer you have access to. You <i>could</i> also do this with a vanilla version of Python from <a href="https://python.org">the Python website</a>, but we recommend using Anaconda so you will have access to all the packages that we will make use of in this tutorial.</p>
+                    <p class="fragment fade-up longtext">Remember to add the folder to your Path environment variable if you want to use python from your terminal!</p>
+                </section>
+                <section>
+                    <p class="longtext">Now, open a terminal and run the following commands. Remember, you can pause this demo at any time and even paste from the demo. However, we recommend typing into the terminal yourselves as that improves muscle-memory.</p>
+                </section>
+                <section>
+                    <asciinema-player 
+                        src="{{ url_for('static', filename='asciinema/demo.cast') }}" 
+                        cols="200" rows="30" 
+                        idle-time-limit="1" 
+                        speed="1.5" 
+                        font-size="12px">
+                    </asciinema-player>
+                    <p class="fragment fade-up">Voila! That's how you launch Python!</p>
+                </section>
             </section>
+            <section><p>Hello, World!</p></section>
+            <section>
+                <p>Basics</p>
+            </section>
+            <section>
+                <p>The Zen of Python</p>
+            </section>
+            <section>Tools</section>
+            <section>Modules</section>
+            <section>Interesting Examples</section>
+            <section>Living with Python</section>
         </div>
     </div>
     <!--  -->
