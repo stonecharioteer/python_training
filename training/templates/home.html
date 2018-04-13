@@ -63,7 +63,10 @@
                         </div>
                     </div>
             </section>
-            <section>
+            <section 
+                data-background-image="{{ url_for('static', filename='img/new_header.PNG') }}" 
+                data-background-size="180px" 
+                data-background-position="top left">
                 <asciinema-player src="{{ url_for('static', filename='asciinema/demo.cast') }}" cols="200" rows="30" idle-time-limit="1" speed="2" font-size="12px"></asciinema-player>
             </section>
         </div>
