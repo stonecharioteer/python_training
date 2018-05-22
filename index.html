@@ -2,10 +2,10 @@
 <html>
     <head>
         <title>Python Training Material</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/asciinema-player/2.4.1/asciinema-player.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/black.min.css">
+        <link rel="stylesheet" href="font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="asciinema-player/2.4.1/asciinema-player.css">
+        <link rel="stylesheet" href="reveal.js/3.6.0/css/reveal.css">
+        <link rel="stylesheet" href="reveal.js/3.6.0/css/theme/black.css">
         <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAACvYwUAAAAAAADM/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQICAgICAgEBAQEBAQEBAQICAgICAQECAQEBAQEBAQECAgICAgEBAgEBAQEBAQAAAgICAgICAgICAgEBAQAAAAICAgICAgICAgICAQEAAAACAgICAgICAgICAgEBAAAAAAAAAAAAAAACAgIBAQAAAAAAAAAAAAAAAgICAQEBAAAAAAAAAAAAAAICAQEBAQEBAAEBAAAAAAABAQEBAQEBAQABAQAAAAAAAQEBAQEBAQEBAAAAAAAAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf//AAD//wAA+B8AAPBvAADwbwAAwAMAAIABAACAAQAAgAEAAIABAADAAwAA9g8AAPYPAAD4HwAA//8AAP//AAA="
     rel="icon" type="image/x-icon" />
 
@@ -39,8 +39,6 @@
                             ### Agenda
                             * Introduction
                             * Launching the Python interpreter
-                            * Typing Python code.
-                            * Why you shouldn't use Windows Notepad.
                             * Hello, World!
                             * Basics
                                 * Data Types
@@ -52,11 +50,11 @@
                     </section>
                     <section>
                         <h3>Launching the Python Interpreter</h3>
-                        <asciinema-player src="asciinema/demo.cast" cols="170" rows="40" idle-time-limit="1" speed="2" font-size="8px"></asciinema-player>
+                        <asciinema-player src="asciinema/demo.cast" cols="170" rows="40" idle-time-limit="1" speed="2" font-size="14px"></asciinema-player>
                     </section>
                     <section>
                         <h3>Demo Asciinema</h3>
-                        <script src="https://asciinema.org/a/161892.js" id="asciicast-161892" data-cols="170" data-rows="40" data-idle-time-limit="1" data-speed="2" data-font-size="8px" async></script>
+                        <script src="https://asciinema.org/a/161892.js" id="asciicast-161892" data-cols="170" data-rows="40" data-idle-time-limit="1" data-speed="3" data-font-size="14px" async></script>
                     </section>
 
                 </section>
@@ -71,6 +69,7 @@
                             ### Agenda
                             * PEP-8: The Zen of Python
                             * Where to write code:
+                                * Why you shouldn't use Windows Notepad.
                                 * Editors
                                 * Jupyter Notebooks
                         </textarea>
@@ -132,10 +131,11 @@
                 </section>
             </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/marked.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/markdown.min.js"></script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/asciinema-player/2.4.1/asciinema-player.min.js"></script>
+        <script src="reveal.js/3.6.0/js/reveal.js"></script>
+        <script src="reveal.js/3.6.0/lib/js/head.min.js"></script>
+        <!-- <script src="reveal.js/3.6.0/plugin/markdown/marked.js"></script>
+        <script src="reveal.js/3.6.0/plugin/markdown/markdown.js"></script> -->
+        <script src="asciinema-player/2.4.1/asciinema-player.js"></script>
         <script>
             Reveal.initialize({
                 controls: true,
@@ -153,24 +153,42 @@
                 help: true,
                 transition: "slide",
                 backgroundTransition: "slide",
-                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/markdown.min.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                markdown: {
+                    smartypants: true
+                },
+                dependencies: [
+                    { 
+                        src: 'reveal.js/3.6.0/plugin/markdown/marked.js', 
+                        condition: function () { return !!document.querySelector('[data-markdown]'); } 
+                    },
+                    {
+                        src: 'reveal.js/3.6.0/plugin/markdown/markdown.js', 
+                        condition: function () { return !!document.querySelector('[data-markdown]'); } 
+                    },
+                    // Syntax highlight for <code> elements
+                    { 
+                        src: 'reveal.js/3.6.0/plugin/highlight/highlight.js', 
+                        async: false, 
+                        callback: function () { hljs.initHighlightingOnLoad(); } 
+                    },
 
-                // Syntax highlight for <code> elements
-                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/highlight/highlight.min.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                    // Zoom in and out with Alt+click
+                    { 
+                        src: 'reveal.js/3.6.0/plugin/zoom-js/zoom.js', 
+                        async: true 
+                    },
 
-                // Zoom in and out with Alt+click
-                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.min.js', async: true },
-
-                // Speaker notes
-                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/notes/notes.min.js', async: true },
-
-                // MathJax
-                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/notes/notes.min.js', async: true },
-                
-                markdown: { 
-                    smartypants: true 
-                }
+                    // Speaker notes
+                    { 
+                        src: 'reveal.js/3.6.0/plugin/notes/notes.js', 
+                        async: true 
+                    },
+                    // MathJax
+                    { 
+                        src: 'reveal.js/3.6.0/plugin/notes/notes.js', 
+                        async: true 
+                    }
+                ]
             });
         </script>
     </body>
