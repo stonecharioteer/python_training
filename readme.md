@@ -1,8 +1,9 @@
 # Python Training Agenda
-
+[Visit the Githubpages Site for the Live Page](https://vinay87.github.io/python_training)
 #### By __Vinay Keerthi__
 
 ----
+### TODO: Rewrite this.
 
 ## Session 1:
 
