@@ -41,7 +41,8 @@
                         <!-- Vinay -->
                         <h4>Hello, Python!</h4>
                         <aside class="notes">
-                            In this session, we'll discuss basics of Python, focussing on how to get a working Python interpreter, where we can type code.
+                            In this session, we'll discuss basics of Python, focussing on how to get a working Python 
+                            interpreter, where we can type code.
                         </aside>
                     </section>
                     <section data-markdown>
@@ -63,11 +64,16 @@
                         <asciinema-player src="asciinema/1.01_launch_python.cast" cols="170" rows="20" idle-time-limit="2" speed="4" font-size="16px"></asciinema-player>
                     </section>
                     <section>
-                        <p>The Python interpreter is an <b>interactive</b> python console. You can type anything there and get instant feedback. It is easy to use the interpreter to prototype code snippets, to try out new algorithms, and to figure out what's wrong with your code.</p>
+                        <p>The Python interpreter is an <b>interactive</b> python console. You can type anything there and get instant 
+                            feedback. It is easy to use the interpreter to prototype code snippets, to try out new algorithms, and 
+                            to figure out what's wrong with your code.</p>
                     </section>
                     <section>
                         <h3>Hello, World!</h3>
-                        
+                        <p>Open a text editor of your choice, any text editor, and type this:</p>
+                        <pre><code data-trim>
+                            print("Hello, World!")
+                        </code></pre>
                     </section>
                 </section>
                 <section>
@@ -179,11 +185,11 @@
                         condition: function () { return !!document.querySelector('[data-markdown]'); } 
                     },
                     // Syntax highlight for <code> elements
-                    /*{ 
+                    { 
                         src: 'reveal.js/3.6.0/plugin/highlight/highlight.js', 
-                        async: false, 
+                        async: true, 
                         callback: function () { hljs.initHighlightingOnLoad(); } 
-                    },*/
+                    },
 
                     // Zoom in and out with Alt+click
                     { 
