@@ -26,7 +26,7 @@
                     <p class="minifont" style="font-size: 18px">
                         Najeem Muhammed <a href="https://github.com/idling-mind" target="_blank"><i class=" fa fa-github "></i></a>
                         <a href="mailto:Najeem.Muhammed@gknaerospace.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                        | 
+                        |
                         Vinay Keerthi <a href="https://github.com/vinay87" target="_blank"><i class="fa fa-github"></i></a>
                         <a href="mailto:Vinay.Keerthi@gkndriveline.com" target="_blank"><i class="fa fa-envelope"></i></a>
                     </p>
@@ -39,7 +39,8 @@
                         <a href="http://www.automatetheboringstuff.com/"> <i class="fa fa-book fa-fw"></i>Automate the Boring Stuff</a>
                     </p>
                     <aside class="notes">
-                        This presentation is meant to be delivered over a period of 5 one hour sessions. It is largely targetted towards Mechanical Engineers with little to no experience of coding.
+                        This presentation is meant to be delivered over a period of 5 two hour sessions.
+                        It is largely targetted towards Mechanical Engineers with little to no experience of coding.
                     </aside>
                 </section>
                 <section>
@@ -48,7 +49,7 @@
                         <!-- Vinay -->
                         <h4>Hello, Python!</h4>
                         <aside class="notes">
-                            In this session, we'll discuss basics of Python, focussing on how to get a working Python 
+                            In this session, we'll discuss basics of Python, focussing on how to get a working Python
                             interpreter, where we can type code.
                         </aside>
                     </section>
@@ -67,21 +68,65 @@
                         </textarea>
                     </section>
                     <section>
+                        <section data-markdown>
+                            <textarea data-template>
+                                ### Introduction: What is Python?
+
+                                * A General Purpose Language
+                                * Readable syntax
+                                * Interpreted language (conditions apply)
+                                * Object Oriented
+                                * Powerful and extensible.
+                                * A huge inventory of community-driven libraries
+                                * User-friendly for people who have never programmed before
+                                * Replacement for Matlab
+                            </textarea>
+                        </section>
+                        <aside class="notes">
+                            Here, talk to the audience about how Python is a
+                            general purpose programming language that is
+                            largely becoming the defacto-replacement for
+                            Matlab. This training material is directed towards
+                            non-programmers, so to get them familiarized with
+                            Python's syntax and selling points, you'll need to
+                            tell them how Python can help them solve problems.
+                            Mention how Python is used to teach programming
+                            to kids in Africa.
+                        </aside>
+                    </section>
+
+                    <section>
+                        <section data-markdown>
+                            <textarea data-template>
+                                ### Installation Instructions
+                                You can download Anaconda off the link provided in
+                                the first page of this training website. Anaconda
+                                is a Python distribution that includes a lot of
+                                the packages we will use over the course of this
+                                training.
+                            </textarea>
+                            <aside class="notes">
+                                Set people up with Anaconda Python 3 prior to
+                                the training.
+                            </aside>
+                        </section>
+                    </section>
+                    <section>
                         <h3>Launching the Python Interpreter</h3>
-                        <asciinema-player 
-                            src="asciinema/1.01_launch_python.cast" 
-                            cols="170" 
-                            rows="20" 
-                            idle-time-limit="1" 
-                            speed="2" 
+                        <asciinema-player
+                            src="asciinema/1.01_launch_python.cast"
+                            cols="170"
+                            rows="20"
+                            idle-time-limit="1"
+                            speed="2"
                             font-size="16px">
                         </asciinema-player>
                     </section>
                     <section>
-                        <p>The Python interpreter is an <b>interactive</b> python console. You can type anything there and get instant 
-                            feedback. It is easy to use the interpreter to prototype code snippets, to try out new algorithms, and 
-                            to figure out what's wrong with your code. Think of it as a calculator. 
-                            <a href="https://docs.python.org/3/library/operator.html#mapping-operators-to-functions">Here</a> is the 
+                        <p>The Python interpreter is an <b>interactive</b> python console. You can type anything there and get instant
+                            feedback. It is easy to use the interpreter to prototype code snippets, to try out new algorithms, and
+                            to figure out what's wrong with your code. Think of it as a calculator.
+                            <a href="https://docs.python.org/3/library/operator.html#mapping-operators-to-functions">Here</a> is the
                             official documentation on all the operators you can use.
                         </p>
                     </section>
@@ -94,82 +139,82 @@
                     </section>
                     <section>
                         <p>
-                        Save this in a file called "hello.py" in a folder of your choice. Open a command line, Windows Powershell, 
+                        Save this in a file called "hello.py" in a folder of your choice. Open a command line, Windows Powershell,
                         GNU/Linux Terminal or a terminal emulator of your choice, and navigate to the folder using the <code>cd</code> command.</p>
                         <p>Once there, type <code>python hello.py</code> and hit enter.</p>
                     </section>
                     <section>
                         <h3>Data Types: Numbers</h3>
-                        <asciinema-player 
-                            src="asciinema/1.02_data_types_numbers.cast" 
-                            cols="170" 
-                            rows="20" 
-                            idle-time-limit="1" 
-                            speed="2" 
+                        <asciinema-player
+                            src="asciinema/1.02_data_types_numbers.cast"
+                            cols="170"
+                            rows="20"
+                            idle-time-limit="1"
+                            speed="2"
                             font-size="16px">
                         </asciinema-player>
                     </section>
                     <section>
                         <h3>Data Types: Strings and Characters</h3>
-                        <asciinema-player 
-                            src="asciinema/1.03_data_types_strings_characters.cast" 
-                            cols="170" 
-                            rows="20" 
-                            idle-time-limit="1" 
-                            speed="2" 
+                        <asciinema-player
+                            src="asciinema/1.03_data_types_strings_characters.cast"
+                            cols="170"
+                            rows="20"
+                            idle-time-limit="1"
+                            speed="2"
                             font-size="16px">
                         </asciinema-player>
                         <p style="font-size: 16px; padding-left: 25%; padding-right: 25%">
-                            Strings and characters are essentially objects called lists in python. 
+                            Strings and characters are essentially objects called lists in python.
                             Before you understand how you can really use strings,
                             you should take some time to understand lists.
                         </p>
                     </section>
                     <section>
                         <h3>Data Types: Lists</h3>
-                        <asciinema-player 
-                            src="asciinema/1.04_data_types_lists.cast" 
-                            cols="170" 
-                            rows="20" 
-                            idle-time-limit="1" 
-                            speed="2" 
+                        <asciinema-player
+                            src="asciinema/1.04_data_types_lists.cast"
+                            cols="170"
+                            rows="20"
+                            idle-time-limit="1"
+                            speed="2"
                             font-size="16px">
                         </asciinema-player>
                     </section>
                     <section>
                         <h3>Data Types: String Manipulation</h3>
-                        <asciinema-player 
-                            src="asciinema/1.05_data_types_strings.cast" 
-                            cols="170" 
-                            rows="20" 
-                            idle-time-limit="1" 
-                            speed="2" 
+                        <asciinema-player
+                            src="asciinema/1.05_data_types_strings.cast"
+                            cols="170"
+                            rows="20"
+                            idle-time-limit="1"
+                            speed="2"
                             font-size="16px">
                         </asciinema-player>
                     </section>
                     <section>
                         <h3>Data Types: Dictionaries</h3>
-                        <asciinema-player 
-                            src="asciinema/1.06_data_types_dictionaries.cast" 
-                            cols="170" 
-                            rows="20" 
-                            idle-time-limit="1" 
-                            speed="2" 
+                        <asciinema-player
+                            src="asciinema/1.06_data_types_dictionaries.cast"
+                            cols="170"
+                            rows="20"
+                            idle-time-limit="1"
+                            speed="2"
                             font-size="16px">
                         </asciinema-player>
                     </section>
                     <section>
                             <h3>Conditionals & Control Structures</h3>
-                            <asciinema-player 
-                                    src="asciinema/1.07_conditionals_and_control.cast" 
-                                cols="170" 
-                                rows="20" 
-                                idle-time-limit="1" 
-                                speed="2" 
+                            <asciinema-player
+                                    src="asciinema/1.07_conditionals_and_control.cast"
+                                cols="170"
+                                rows="20"
+                                idle-time-limit="1"
+                                speed="2"
                                 font-size="16px">
                             </asciinema-player>
                             <p style="font-size: 16px; padding-left: 15%; padding-right: 15%">
-                                    When using conditional structures, you begin noticing the white spaces before 
+                                    When using conditional structures, you begin noticing the white spaces before
                                     some lines. This is called a block. Python uses whitespaces to denote when a
                                     block begins or ends. Always use 4 spaces, and never a "tab" to indent your code.
                                     With a good editor, you can set it to change tabs to 4 white spaces.
@@ -177,34 +222,34 @@
                     </section>
                     <section>
                         <h3>More Conditionals & Control Structures</h3>
-                        <asciinema-player 
-                            src="asciinema/1.08_conditionals_and_control.cast" 
-                            cols="170" 
-                            rows="20" 
-                            idle-time-limit="1" 
-                            speed="2" 
+                        <asciinema-player
+                            src="asciinema/1.08_conditionals_and_control.cast"
+                            cols="170"
+                            rows="20"
+                            idle-time-limit="1"
+                            speed="2"
                             font-size="16px">
                         </asciinema-player>
                     </section>
                     <section>
                         <h3>File Operations</h3>
-                        <asciinema-player 
-                            src="asciinema/1.09_file_operations.cast" 
-                            cols="170" 
-                            rows="20" 
-                            idle-time-limit="1" 
-                            speed="2" 
+                        <asciinema-player
+                            src="asciinema/1.09_file_operations.cast"
+                            cols="170"
+                            rows="20"
+                            idle-time-limit="1"
+                            speed="2"
                             font-size="16px">
                         </asciinema-player>
                     </section>
                     <section>
                         <h3>Functions</h3>
-                        <asciinema-player 
-                            src="asciinema/1.10_functions.cast" 
-                            cols="170" 
-                            rows="20" 
-                            idle-time-limit="1" 
-                            speed="2" 
+                        <asciinema-player
+                            src="asciinema/1.10_functions.cast"
+                            cols="170"
+                            rows="20"
+                            idle-time-limit="1"
+                            speed="2"
                             font-size="16px">
                         </asciinema-player>
                     </section>
@@ -270,7 +315,7 @@
                         <!-- Vinay -->
                         <h4>Automation and the Internet of Things</h4>
                     </section>
-                    <!-- 
+                    <!--
                     <section data-markdown>
                         <textarea data-template>
                             ### Agenda
@@ -303,7 +348,7 @@
                         <p class="fragment current-visible">We're always in a network <i class="fa fa-sitemap"></i>.</p>
                         <p class="fragment current-visible">Mobile phones <i class="fa fa-mobile"></i> communicate with one another.</p>
                         <p class="fragment current-visible">Computers <i class="fa fa-desktop"></i> talk to one another.</p>
-                        <p class="fragment">Everything 
+                        <p class="fragment">Everything
                             <i class="fa fa-desktop fa-fw"></i>
                             <i class="fa fa-laptop fa-fw"></i>
                             <i class="fa fa-mobile fa-fw"></i>
@@ -375,7 +420,7 @@
                     <section>
                         <h3>Interesting Projects</h3>
                         <h5>Make Craft Beer <a href="https://www.youtube.com/watch?v=YGARUJgFWh4" target="_blank"><i class="fa fa-link"></i></a></h5>
-                        <iframe width="860" height="520" data-src="https://www.youtube.com/embed/YGARUJgFWh4?autoplay=1"></iframe>                            
+                        <iframe width="860" height="520" data-src="https://www.youtube.com/embed/YGARUJgFWh4?autoplay=1"></iframe>
                     </section>
                     <section>
                         <h3>Interesting Projects</h3>
@@ -399,18 +444,18 @@
                     <section>
                         <h3>Where Do I Go From Here?</h3>
                         <p style="font-size: 20px">
-                            <a href="https://scratch.mit.edu/" target="_blank">Scratch : Visual Programming for Kids</a> | 
-                            <a href="https://nodered.org/" target="_blank">Node-RED Visual Programming</a> | 
-                            <a href="https://nifi.apache.org/" target="_blank">Apache NiFi Visual Programming</a> | 
+                            <a href="https://scratch.mit.edu/" target="_blank">Scratch : Visual Programming for Kids</a> |
+                            <a href="https://nodered.org/" target="_blank">Node-RED Visual Programming</a> |
+                            <a href="https://nifi.apache.org/" target="_blank">Apache NiFi Visual Programming</a> |
                             <a href="https://ifttt.com/" target="_blank">IF This Then That: IFTTT: Automation Interface</a> |
-                            <a 
-                                href="https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_IN" 
-                                target="_blank">Tasker: Automation for Android</a> | 
+                            <a
+                                href="https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_IN"
+                                target="_blank">Tasker: Automation for Android</a> |
                             <a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a> |
-                            <a href="http://www.pibakery.org/" target="_blank">PiBakery : Set up your Raspberry Pi</a> | 
-                            <a href="https://www.raspberrypi.org/magpi-issues/MagPi70.pdf" target="_blank">MagPi Issue 70: Home Automation with the Raspberry Pi</a> | 
-                            <a href="https://automatetheboringstuff.com/" target="_blank">Automate the Boring Stuff</a> | 
-                            <a href="http://nodemcu.com/index_en.html" target="_blank">NodeMCU : ESP8266 Development Board</a> | 
+                            <a href="http://www.pibakery.org/" target="_blank">PiBakery : Set up your Raspberry Pi</a> |
+                            <a href="https://www.raspberrypi.org/magpi-issues/MagPi70.pdf" target="_blank">MagPi Issue 70: Home Automation with the Raspberry Pi</a> |
+                            <a href="https://automatetheboringstuff.com/" target="_blank">Automate the Boring Stuff</a> |
+                            <a href="http://nodemcu.com/index_en.html" target="_blank">NodeMCU : ESP8266 Development Board</a> |
                             <a href="https://micropython.org/" target="_blank">MicroPython</a>
                         </p>
                     </section>
@@ -444,36 +489,36 @@
                     smartypants: true
                 },
                 dependencies: [
-                    { 
-                        src: 'reveal.js/3.6.0/plugin/markdown/marked.js', 
-                        condition: function () { return !!document.querySelector('[data-markdown]'); } 
+                    {
+                        src: 'reveal.js/3.6.0/plugin/markdown/marked.js',
+                        condition: function () { return !!document.querySelector('[data-markdown]'); }
                     },
                     {
-                        src: 'reveal.js/3.6.0/plugin/markdown/markdown.js', 
-                        condition: function () { return !!document.querySelector('[data-markdown]'); } 
+                        src: 'reveal.js/3.6.0/plugin/markdown/markdown.js',
+                        condition: function () { return !!document.querySelector('[data-markdown]'); }
                     },
                     // Syntax highlight for <code> elements
-                    { 
-                        src: 'reveal.js/3.6.0/plugin/highlight/highlight.js', 
-                        async: true, 
-                        callback: function () { hljs.initHighlightingOnLoad(); } 
+                    {
+                        src: 'reveal.js/3.6.0/plugin/highlight/highlight.js',
+                        async: true,
+                        callback: function () { hljs.initHighlightingOnLoad(); }
                     },
 
                     // Zoom in and out with Alt+click
-                    { 
-                        src: 'reveal.js/3.6.0/plugin/zoom-js/zoom.js', 
-                        async: true 
+                    {
+                        src: 'reveal.js/3.6.0/plugin/zoom-js/zoom.js',
+                        async: true
                     },
 
                     // Speaker notes
-                    { 
-                        src: 'reveal.js/3.6.0/plugin/notes/notes.js', 
-                        async: true 
+                    {
+                        src: 'reveal.js/3.6.0/plugin/notes/notes.js',
+                        async: true
                     },
                     // MathJax
-                    { 
-                        src: 'reveal.js/3.6.0/plugin/notes/notes.js', 
-                        async: true 
+                    {
+                        src: 'reveal.js/3.6.0/plugin/notes/notes.js',
+                        async: true
                     }
                 ]
             });
