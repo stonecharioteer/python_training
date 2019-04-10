@@ -5,7 +5,13 @@
         <link rel="stylesheet" href="font-awesome/4.7.0/css/font-awesome.css">
         <link rel="stylesheet" href="asciinema-player/2.4.1/asciinema-player.css">
         <link rel="stylesheet" href="reveal.js/3.6.0/css/reveal.css">
-        <link rel="stylesheet" href="reveal.js/3.6.0/css/theme/solarized.css">
+        <link rel="stylesheet" href="reveal.js/3.6.0/css/theme/simple.css">
+        <style>
+            span.code {
+                font-family: courier new;
+                font-weight: bold;
+            }
+        </style>
         <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAACvYwUAAAAAAADM/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQICAgICAgEBAQEBAQEBAQICAgICAQECAQEBAQEBAQECAgICAgEBAgEBAQEBAQAAAgICAgICAgICAgEBAQAAAAICAgICAgICAgICAQEAAAACAgICAgICAgICAgEBAAAAAAAAAAAAAAACAgIBAQAAAAAAAAAAAAAAAgICAQEBAAAAAAAAAAAAAAICAQEBAQEBAAEBAAAAAAABAQEBAQEBAQABAQAAAAAAAQEBAQEBAQEBAAAAAAAAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf//AAD//wAA+B8AAPBvAADwbwAAwAMAAIABAACAAQAAgAEAAIABAADAAwAA9g8AAPYPAAD4HwAA//8AAP//AAA="
     rel="icon" type="image/x-icon" />
         <script>
@@ -35,9 +41,8 @@
                     </p>
                     <p style="font-size: 14px; padding-left: 25%; padding-right: 25%">This training material is hosted at <a href="http://vinay87.github.io/python_training"><i class="fa fa-github fa-fw"></i> github</a> for your easy access. You can print the document in an easy to read format, albeit without the playable asciinema code segments by going <a href="https://vinay87.github.io/python_training/?print-pdf&showNotes=true#/">here</a> and printing using your browser's dialog. Use chrome if you'd like to export to PDF.</p>
                     <p style="font-size: 14px; padding-left: 25%; padding-right: 25%">Useful Links: <br/>
-                        <a href="https://www.python.org/"><i class="fa fa-terminal fa-fw"></i>Python Official Site</a> <br />
-                        <a href="https://docs.python.org/3.6/"><i class="fa fa-book fa-fw"></i>Python 3.6 Documentation</a> |
-                        <a href="https://docs.python.org/2.7/"><i class="fa fa-book fa-fw"></i>Python 2.7 Documentation</a> | <br />
+                        <a href="https://www.python.org/"><i class="fa fa-terminal fa-fw"></i>Python Official Site</a> |
+                        <a href="https://docs.python.org/3/"><i class="fa fa-book fa-fw"></i>Python Documentation</a> <br />
                         <a href="https://www.anaconda.com/downloads"><i class="fa fa-download fa-fw"></i>Anaconda Python Distribution</a> |
                         <a href="http://www.automatetheboringstuff.com/"> <i class="fa fa-book fa-fw"></i>Automate the Boring Stuff</a>
                     </p>
@@ -48,15 +53,18 @@
                 </section>
                 <section>
                     <h3>Training Overview</h3>
-                    <p style="text-align: left">
-                        * Day 1: Introduction to Python <br />
-                        * Day 2: Functions and ModulesLaunching the Python interpreter<br />
-                        * Day 3: Essential Built-In Libraries<br />
-                        * Day 4: Essential Third-Party Libraries<br />
-                        * Day 5: Department Specific Tracks<br />
-                            * ME Track<br />
-                            * CAE Track<br />
-                        * Day 6: End Note: The Joy of Automation (No laptop required)</p>
+                    <ul style="text-align: left; font-size: 28px;">
+                        <li><b>Day 1:</b> Introduction to Python</li>
+                        <li><b>Day 2:</b> Functions and Modules</li>
+                        <li><b>Day 3:</b> Essential Built-In Libraries</li>
+                        <li><b>Day 4:</b> Essential Third-Party Libraries</li>
+                        <li><b>Day 5:</b> Department Specific Tracks</li>
+                            <ul>
+                                <li>ME Track</li>
+                                <li>CAE Track</li>
+                            </ul>
+                        <li><b>End Note:</b> The Joy of Automation (No laptop required)</li>
+                    </ul>
                 </section>
                 <section>
                     <section>
@@ -76,48 +84,32 @@
                             * Using a text file
                             * Basics
                                 * Data Types
-                                * Conditionals
-                                * Control Structures
-                                * File Operations
                             * Exercises
                         </textarea>
                     </section>
-                    <section data-markdown>
-                        <textarea data-template>
-                            ### Introduction: What is Python?
-
-                            * A General Purpose Language
-                            * Readable syntax
-                            * Interpreted language (conditions apply)
-                            * Object Oriented
-                            * Powerful and extensible.
-                            * A huge inventory of community-driven libraries
-                            * User-friendly for people who have never programmed before
-                            * Replacement for Matlab
-                        </textarea>
-                    </section>
-                    <!-- <aside class="notes">
-                        Here, talk to the audience about how Python is a
-                        general purpose programming language that is
-                        largely becoming the defacto-replacement for
-                        Matlab. This training material is directed towards
-                        non-programmers, so to get them familiarized with
-                        Python's syntax and selling points, you'll need to
-                        tell them how Python can help them solve problems.
-                        Mention how Python is used to teach programming
-                        to kids in Africa.
-                    </aside> -->
-
                     <section>
-                        <section data-markdown>
-                            <textarea data-template>
-                                ### Installation Instructions
+                        <h3>Introduction: What is Python?</h3>
+                        <ul style="text-align: left; font-size: 28px;">
+                            <li>A General Purpose Language</li>
+                            <li>Readable syntax</li>
+                            <li>Interpreted language (conditions apply)</li>
+                            <li>Object Oriented</li>
+                            <li>Powerful and extensible.</li>
+                            <li>A huge inventory of community-driven libraries</li>
+                            <li>User-friendly for people who have never programmed before</li>
+                            <li>Replacement for Matlab</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <section>
+                            <h3>Installation Instructions</h3>
+                            <p style="font-size: 28px;">
                                 You can download Anaconda off the link provided in
                                 the first page of this training website. Anaconda
                                 is a Python distribution that includes a lot of
                                 the packages we will use over the course of this
                                 training.
-                            </textarea>
+                            </p>
                             <aside class="notes">
                                 Set people up with Anaconda Python 3 prior to
                                 the training.
@@ -195,6 +187,20 @@
                         </asciinema-player>
                     </section>
                     <section>
+                        <h3>Notes on List Indexing</h3>
+                        <img src="img/lists.png" height="200" style="border: 0px;"/>
+                        <p style="font-size: 24px; align: left;">
+                            Lists are zero indexed in Python. The first item has an address of zero.
+                            When accessing more than one list item using <span class="code">l[m:n]</span>, you are actually
+                            using the concept of <a href="https://en.wikipedia.org/wiki/Interval_(mathematics)" target="_blank">Intervals</a> in Mathematics.
+                            When you type <span class="code">l[m:n]</span> you are asking for a <b>half-open</b> interval of the list.
+                            <i>i.e.</i>, you are asking for item at position m, and all following items <i>until</i> the item at position n.
+                        </p>
+                        <p style="font-size: 24px; align: left;">
+                            When you ask for <span class="code">l[-1]</span>, the list is giving you one item <i>behind</i> the item at position 0.
+                        </p>
+                    </section>
+                    <section>
                         <h3>Data Types: String Manipulation</h3>
                         <asciinema-player
                             src="asciinema/1.05_data_types_strings.cast"
@@ -206,79 +212,81 @@
                         </asciinema-player>
                     </section>
                     <section>
-                        <h3>Data Types: Dictionaries</h3>
-                        <asciinema-player
-                            src="asciinema/1.06_data_types_dictionaries.cast"
-                            cols="170"
-                            rows="20"
-                            idle-time-limit="1"
-                            speed="2"
-                            font-size="16px">
-                        </asciinema-player>
+                        <h3>Day 1 Recap</h3>
+                        <ul style="font-size: 24px; text-align: left">
+                            <li>Python is a general purpose programming language. It's like a swiss-knife, which comes with many attachments!</li>
+                            <li>Use Anaconda Python when you are a beginning. It comes with all those attachments.</li>
+                            <li>Python is cAsE SeNsiTive! <span class="code">print</span> is not equal to Print or to PRINT.</li>
+                            <li>The python interpreter will always display the output of a current statement.</li>
+                            <li>To see output in a script file, use the print function.</li>
+                            <li>There are some nice built-in functions: <span class="code">type, help, dir, print, set, int, float and str</span> among others.</li>
+                            <li>Lists are like slotted buckets into which you can put anything, even other lists.</li>
+                            <li>If you're using notepad to save Python files, make sure you select <b>All Files</b>
+                                before saving as a <span class="code">.py</span> file. Windows will save it as a <span class="code">*.py.txt</span> file.
+                                This is why you should <b>never</b> use notepad to write code.
+                            </li>
+                        </ul>
                     </section>
                     <section>
-                            <h3>Conditionals & Control Structures</h3>
-                            <asciinema-player
-                                    src="asciinema/1.07_conditionals_and_control.cast"
-                                cols="170"
-                                rows="20"
-                                idle-time-limit="1"
-                                speed="2"
-                                font-size="16px">
-                            </asciinema-player>
-                            <p style="font-size: 16px; padding-left: 15%; padding-right: 15%">
-                                When using conditional structures, you begin noticing the white spaces before
-                                some lines. This is called a <b>block</b>. Python uses whitespaces to denote when a
-                                block begins or ends. Always use 4 spaces, and never a "tab" to indent your code.
-                                With a good editor, you can set it to change tabs to 4 white spaces.
-                            </p>
-                    </section>
-                    <section>
-                        <h3>More Conditionals & Control Structures</h3>
-                        <asciinema-player
-                            src="asciinema/1.08_conditionals_and_control.cast"
-                            cols="170"
-                            rows="20"
-                            idle-time-limit="1"
-                            speed="2"
-                            font-size="16px">
-                        </asciinema-player>
-                    </section>
-                    <section>
-                        <h3>File Operations</h3>
-                        <asciinema-player
-                            src="asciinema/1.09_file_operations.cast"
-                            cols="170"
-                            rows="20"
-                            idle-time-limit="1"
-                            speed="2"
-                            font-size="16px">
-                        </asciinema-player>
-                    </section>
-                    <section>
-                        <h3>Day 1 Ends</h3>
-                        <h4>Exercises</h4>
-                        <p style="font-size: 26px; text-align: left">* Try printing your name 42 times in the Python interpreter. How would you do it if you had to print all of them in the same line? <br/>
-                        * Try taking the phrase `A small dusty man in a small dusty room` and print out how many times the word `small` appears in
-                        it? The answer is easy now, but what if the line were much, much longer?<br />
-                        * Download the entire text of <a href="data/pg730.txt">Charles Dickens - Oliver Twist</a> and count how many times the phrase `Artful Dodger` appears in it.<br />
-                        * Bonus: Try figuring out how to get a list of works in the book. Can you print them all out?</p>
+                        <h3>Day 1 Exercises</h3>
+                        <ul style="font-size: 26px; text-align: left">
+                            <li>Try printing your name 42 times in the Python interpreter. How would
+                            you do it if you had to print all of them in the same line?</li>
+                            <li>Try taking the phrase "A small dusty man in a small dusty room" and print out how many times the word "small"
+                            appears in
+                            it? The answer is easy now, but what if the line were much, much longer?</li>
+                            <li>Go to Google and try to find how to read a text file in Python.</li>
+                            <li><b>BONUS:</b> Can you see if you can write to a text file also?</li></ul>
                     </section>
                 </section>
                 <section>
                     <section>
                         <h3>Day 2</h3>
-                        <h4>The Zen of Python (Writing <i>good</i> code!)</h4>
+                        <h4>More Basics</h4>
+                    </section>
+                        <section>
+                            <section data-markdown>
+                                <textarea data-template>
+                                        ### Agenda
+                                        * Dictionaries
+                                        * Conditionals
+                                        * Control Structures
+                                        * File Operations
+                                        * Loops!
+                                        * Functions
+                                        * Introduction to Jupyter Notebooks
+                                    </textarea>
+                            </section>
+                        </section>
+                    <section>
+                        <h3>Data Types: Dictionaries</h3>
+                        <asciinema-player src="asciinema/1.06_data_types_dictionaries.cast" cols="170" rows="20" idle-time-limit="1"
+                            speed="2" font-size="16px">
+                        </asciinema-player>
                     </section>
                     <section>
-                        <section data-markdown>
-                            <textarea data-template>
-                                ### Agenda
-                                * Loops!
-                                * Functions
-                                * Introduction to Jupyter Notebooks
-                            </textarea>
-                        </section>
+                        <h3>Conditionals & Control Structures</h3>
+                        <asciinema-player src="asciinema/1.07_conditionals_and_control.cast" cols="170" rows="20" idle-time-limit="1"
+                            speed="2" font-size="16px">
+                        </asciinema-player>
+                        <p style="font-size: 16px; padding-left: 15%; padding-right: 15%">
+                            When using conditional structures, you begin noticing the white spaces before
+                            some lines. This is called a <b>block</b>. Python uses whitespaces to denote when a
+                            block begins or ends. Always use 4 spaces, and never a "tab" to indent your code.
+                            With a good editor, you can set it to change tabs to 4 white spaces.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>More Conditionals & Control Structures</h3>
+                        <asciinema-player src="asciinema/1.08_conditionals_and_control.cast" cols="170" rows="20" idle-time-limit="1"
+                            speed="2" font-size="16px">
+                        </asciinema-player>
+                    </section>
+                    <section>
+                        <h3>File Operations</h3>
+                        <asciinema-player src="asciinema/1.09_file_operations.cast" cols="170" rows="20" idle-time-limit="1" speed="2"
+                            font-size="16px">
+                        </asciinema-player>
                     </section>
                     <section>
                         <h3>Functions</h3>
@@ -286,15 +294,16 @@
                             font-size="16px">
                         </asciinema-player>
                     </section>
-                    <section data-markdown>
-                        <textarea data-template>
-                            ### Agenda
-                            * PEP-8: The Zen of Python
-                            * Where to write code:
-                                * Why you shouldn't use Windows Notepad.
-                                * Editors
-                                * Jupyter Notebooks
-                        </textarea>
+                    <section>
+                        <h3>Day 2 Ends</h3>
+                        <h4>Exercises</h4>
+                        <ul style="font-size: 24px; text-align: left">
+                            <li>Download the entire text of <a href="data/pg730.txt" target="_blank" title="Right click to save this file somewhere."> <i class="fa fa-book"></i> Charles Dickens - Oliver Twist</a> and count how many
+                            times the phrase `Artful Dodger` appears in it.</li>
+                           <li>How can you get a list of words in the book? Can you print them all out? </li>
+                           <li>Now, make a dictionary with all the words in the book. Can you add the word count for each word in the values?</li>
+                           <li>Write the last one as a function to take a string and return a dictionary that does exactly this.</li>
+                        </ul>
                     </section>
                 </section>
                 <section>
@@ -303,21 +312,23 @@
                         <!-- Najeem -->
                         <h4>Modules</h4>
                     </section>
-                    <section data-markdown>
-                        <textarea data-template>
-                            ### Agenda
-                            * What is a module
-                            * Reusing My Code
-                            * Some Useful Standard Modules
-                                * math
-                                * sys
-                                * os
-                                * random
-                                * subprocess
-                                * win32api
-                                * xml
-                                * datetime
-                        </textarea>
+                    <section>
+                        <h3>Agenda</h3>
+                        <ul style="font-size: 24px;">
+                            <li>What is a module</li>
+                            <li>Reusing My Code</li>
+                            <li>Some Useful Standard Modules</li>
+                                <ul>
+                                    <li>math</li>
+                                    <li>sys</li>
+                                    <li>os</li>
+                                    <li>random</li>
+                                    <li>subprocess</li>
+                                    <li>win32api</li>
+                                    <li>xml</li>
+                                    <li>datetime</li>
+                                </ul>
+                        </ul>
                     </section>
                 </section>
                 <section>
@@ -326,30 +337,52 @@
                         <!-- Najeem -->
                         <h4>Useful external modules</h4>
                     </section>
-                    <section data-markdown>
-                        <textarea data-template>
-                            ### Agenda
-                            * Third-Party Modules (The Anaconda Distribution)
-                                * pandas
-                                * numpy
-                                * matplotlib
-                                * xlwings
-                        </textarea>
+                    <section>
+                        <h3>Agenda</h3>
+                        <ul style="font-family: 24px;">
+                            <li>Third-Party Modules (The Anaconda Distribution)</li>
+                            <ul>
+                                <li>pandas</li>
+                                <li>numpy</li>
+                                <li>matplotlib</li>
+                                <li>xlwings</li>
+                            </ul>
+                        </ul>
                     </section>
                 </section>
                 <section>
                     <section>
                         <h3>Day 5</h3>
-                        <!-- Vinay -->
                         <h4>Running python in NX</h4>
                     </section>
-                    <section data-markdown>
-                        <textarea data-template>
-
-                        </textarea>
+                    <section>
+                        <h3>Agenda</h3>
+                        <ul style="font-family: 24px;">
+                            <li>Introduction to NXOpen</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h4>Resources</h4>
+                        <ul style="font-size: 26px; text-align: left;">
+                            <li><a href="resources/beginners_python_cheat_sheet_pcc_all.pdf" target="_blank">Cheatsheet 1</a></li>
+                            <li><a href="resources/mementopython3-english.pdf" target="_blank">Cheatsheet 2</a></li>
+                            <li><a href="resources/Python Cheat Sheet by DaveChild - Cheatography.com_ Cheat Sheets For Every Occasion.png" target="_blank">Cheatsheet 3</a></li>
+                            <li><a href="https://automatetheboringstuff.com/" target="_blank">Automate the Boring Stuff</a> (Recommended reading)</li>
+                            <li><a href="https://docs.python.org/3/tutorial/" target="_blank">Python 3 Official Tutorial</a></li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h3>End Note</h3>
+                        <!-- Vinay -->
+                        <h4 style="font-style: italic;">"The Joy of Automation"</h4>
+                        <p style="font-size: 24px;">This is a general talk anyone can attend. It is a talk about how you get started programming, and how to continue to learn by doing things.</p>
                     </section>
                     <section>
-                        <q>
+                        <q style="font-size: 26px;">
                             <b>Sokrates [Socrates]</b> : You have not observed with attention the images [automata] of Daidalos [Daedalus]. But perhaps there are none in your country. <br />
                             <b>Meno</b> : What is the point of your remark? <br />
                             <b>Sokrates</b> : That if they are not fastened up they play truant and run away; but, if fastened, they stay where they are . . . To possess one of his works which is let loose does not count for much in value; it will not stay with you any more than a runaway slave: but when fastened up it is worth a great deal, for his productions are very fine things.
